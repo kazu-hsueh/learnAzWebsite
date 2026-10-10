@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0b0d0e">
-    <meta name="description" content="AZ-104 Azure RBAC 與權限範圍的繁體中文及英文並列學習筆記與互動練習。">
+    <meta name="description" content="AZ-104 Azure 系統管理員繁體中文學習地圖，涵蓋六大學習路徑、中英並列主題與互動練習。">
     <link rel="icon" href="data:,">
-    <title>RBAC 與權限範圍 | AZ-104 Fieldnotes</title>
+    <title>AZ-104 學習地圖 | Azure Fieldnotes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,8 +20,8 @@
         <span class="brand-name">FIELDNOTES<span>AZURE CERTIFICATION</span></span>
       </a>
       <nav class="top-nav" aria-label="主要導覽">
-        <a href="#lesson">學習內容 <span>STUDY</span></a>
-        <a href="#practice">知識檢核 <span>PRACTICE</span></a>
+        <a href="#curriculum">六大主題 <span>ROADMAP</span></a>
+        <a href="#lesson">RBAC 筆記 <span>STUDY</span></a>
       </nav>
       <a class="top-exam" href="https://learn.microsoft.com/zh-tw/credentials/certifications/exams/az-104/" target="_blank" rel="noreferrer">
         AZ-104 <span aria-hidden="true">↗</span>
@@ -31,49 +31,98 @@
     <main id="top">
       <section class="hero wrap" aria-labelledby="page-title">
         <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-dot"></span> AZ-104 / STUDY MODULE 01</div>
-          <p class="hero-kicker">管理 Azure 身分與治理 <span>20–25%</span></p>
-          <h1 id="page-title">權限給對人，<br><em>範圍剛剛好。</em></h1>
-          <p class="hero-english">The right role.<br><em>At the right scope.</em></p>
-          <p class="hero-summary">從角色指派與範圍繼承，掌握 Azure 資源存取控制的核心思路。</p>
-          <p class="hero-summary hero-summary-en">Understand Azure access control through role assignments and scope inheritance.</p>
-          <a class="primary-link" href="#lesson">開始本章 <span>EXPLORE THIS MODULE</span><b aria-hidden="true">↓</b></a>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> AZ-104 / AZURE ADMINISTRATOR</div>
+          <p class="hero-kicker">Microsoft Azure 系統管理員認證 <span>STUDY ROADMAP</span></p>
+          <h1 id="page-title">把 Azure 管理，<br><em>學成一張地圖。</em></h1>
+          <p class="hero-english">Learn Azure administration.<br><em>One path at a time.</em></p>
+          <p class="hero-summary">從管理先決條件到身分、網路、儲存體、計算與監視，逐步建立 AZ-104 完整學習架構。</p>
+          <p class="hero-summary hero-summary-en">A structured AZ-104 roadmap across prerequisites, identity, networking, storage, compute, monitoring, and backup.</p>
+          <a class="primary-link" href="#curriculum">瀏覽六大主題 <span>EXPLORE THE ROADMAP</span><b aria-hidden="true">↓</b></a>
         </div>
 
-        <div class="hero-visual" aria-label="Azure RBAC 角色指派由安全性主體、角色與範圍組成">
-          <div class="visual-head"><span>ACCESS CONTROL MODEL</span><span class="live-dot">● LIVE CONCEPT</span></div>
-          <div class="assignment-equation">
-            <div class="equation-part principal-part">
-              <span class="part-index">01 / WHO</span>
-              <span class="part-icon icon-person" aria-hidden="true"><i></i><b></b></span>
-              <strong>安全性主體</strong>
-              <small>Security principal</small>
-            </div>
-            <span class="equation-plus" aria-hidden="true">+</span>
-            <div class="equation-part role-part">
-              <span class="part-index">02 / WHAT</span>
-              <span class="part-icon icon-key" aria-hidden="true"><i></i><b></b></span>
-              <strong>角色定義</strong>
-              <small>Role definition</small>
-            </div>
-            <span class="equation-plus" aria-hidden="true">+</span>
-            <div class="equation-part scope-part">
-              <span class="part-index">03 / WHERE</span>
-              <span class="part-icon icon-scope" aria-hidden="true"><i></i><b></b><em></em></span>
-              <strong>範圍</strong>
-              <small>Scope</small>
-            </div>
+        <div class="roadmap-summary" aria-label="六大 AZ-104 學習路徑概況">
+          <div class="roadmap-summary-head"><span>YOUR STUDY MAP</span><span class="live-dot">● 2026 EDITION</span></div>
+          <div class="roadmap-total"><strong>06</strong><span>學習路徑<br>LEARNING PATHS</span></div>
+          <div class="roadmap-mini-list">
+            <div class="mini-path"><span class="mini-number">01</span><span>管理先決條件<small>Administrator prerequisites</small></span><i>FOUNDATION</i></div>
+            <div class="mini-path active"><span class="mini-number">02</span><span>身分識別與治理<small>Identity &amp; governance</small></span><i>RBAC NOTES</i></div>
+            <div class="mini-path"><span class="mini-number">03–06</span><span>網路、儲存、計算、監視<small>Network · Storage · Compute · Monitor</small></span><i>OUTLINED</i></div>
           </div>
-          <div class="visual-result"><span class="result-arrow" aria-hidden="true">→</span><span><b>角色指派</b><small>Role assignment</small></span><span class="result-state">DEFINED</span></div>
-          <div class="visual-foot"><span>LEAST PRIVILEGE</span><span>最小權限原則</span><span class="foot-line"></span><span>INHERITANCE</span></div>
+          <div class="roadmap-summary-foot"><span>繁體中文為主</span><span>TRADITIONAL CHINESE</span><span class="foot-line"></span><span>ENGLISH PAIRING</span></div>
         </div>
-        <div class="hero-meta"><span>01 <i>/</i> 05 SKILL AREAS</span><span>官方考綱：2026.04.17 起適用</span></div>
+        <div class="hero-meta"><span>06 <i>/</i> LEARNING PATHS</span><span>沿用 Microsoft Learn 官方課程架構</span></div>
+      </section>
+
+      <section class="curriculum-section" id="curriculum" aria-labelledby="curriculum-title">
+        <div class="wrap">
+          <div class="section-heading curriculum-heading">
+            <div><p class="section-index">THE AZ-104 ROADMAP</p><h2 id="curriculum-title">六大主題，完整展開<span>Six paths. One learning map.</span></h2></div>
+            <p class="section-intro">先建立完整範圍，再逐章補上觀念、操作筆記與練習題。小主題依 Microsoft Learn 路徑整理，細節會分階段補齊。</p>
+          </div>
+
+          <div class="curriculum-grid">
+            <article class="path-card path-foundation">
+              <div class="path-card-top"><span class="path-number">01</span><span class="path-status status-outline">學習骨架 / OUTLINE</span></div>
+              <p class="path-eyebrow">FOUNDATION · 先備能力</p>
+              <h3>Azure 系統管理員的先決條件<span>Administrator prerequisites</span></h3>
+              <p class="path-description">熟悉管理 Azure 環境前需要的基本工具與部署概念。</p>
+              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>Azure Cloud Shell 簡介 <small>Introduction to Azure Cloud Shell</small></li><li>使用 JSON ARM 範本部署 Azure 基礎結構 <small>Deploy Azure infrastructure with JSON ARM templates</small></li></ul></details>
+              <a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-administrator-prerequisites/" target="_blank" rel="noreferrer">Microsoft Learn 路徑 <b aria-hidden="true">↗</b></a>
+            </article>
+
+            <article class="path-card path-identity path-active">
+              <div class="path-card-top"><span class="path-number">02</span><span class="path-status status-active">已有教材 / IN PROGRESS</span></div>
+              <p class="path-eyebrow">IDENTITY · GOVERNANCE</p>
+              <h3>管理身分識別和治理<span>Manage identities and governance</span></h3>
+              <p class="path-description">管理 Microsoft Entra 身分、Azure RBAC 權限與資源治理。</p>
+              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>Microsoft Entra ID 與身分識別 <small>Microsoft Entra ID and identities</small></li><li>使用者、群組與自助式密碼重設 <small>Users, groups, and SSPR</small></li><li>Azure 角色型存取控制（RBAC） <small>Azure role-based access control</small></li><li>Azure Policy、標籤與資源鎖定 <small>Azure Policy, tags, and resource locks</small></li><li>訂用帳戶、管理群組與成本管理 <small>Subscriptions, management groups, and cost management</small></li></ul></details>
+              <div class="path-actions"><a class="path-link path-link-primary" href="#lesson">閱讀 RBAC 筆記 <b aria-hidden="true">↓</b></a><a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-identities-governance/" target="_blank" rel="noreferrer">Learn 路徑 <b aria-hidden="true">↗</b></a></div>
+            </article>
+
+            <article class="path-card">
+              <div class="path-card-top"><span class="path-number">03</span><span class="path-status status-outline">學習骨架 / OUTLINE</span></div>
+              <p class="path-eyebrow">NETWORKING</p>
+              <h3>設定及管理虛擬網路<span>Configure and manage virtual networks</span></h3>
+              <p class="path-description">規劃連線、網路安全、名稱解析與流量傳遞。</p>
+              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>虛擬網路、子網路與對等互連 <small>Virtual networks, subnets, and peering</small></li><li>網路安全性群組與安全規則 <small>Network security groups and rules</small></li><li>Azure DNS 與名稱解析 <small>Azure DNS and name resolution</small></li><li>路由、負載平衡與應用程式閘道 <small>Routing, load balancing, and Application Gateway</small></li><li>網路監看員與連線疑難排解 <small>Network Watcher and connectivity troubleshooting</small></li></ul></details>
+              <a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-virtual-networks/" target="_blank" rel="noreferrer">Microsoft Learn 路徑 <b aria-hidden="true">↗</b></a>
+            </article>
+
+            <article class="path-card">
+              <div class="path-card-top"><span class="path-number">04</span><span class="path-status status-outline">學習骨架 / OUTLINE</span></div>
+              <p class="path-eyebrow">STORAGE</p>
+              <h3>實作和管理儲存體<span>Implement and manage storage</span></h3>
+              <p class="path-description">建立儲存體帳戶，管理 Blob、Azure Files 與存取安全。</p>
+              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>儲存體帳戶、複寫與端點 <small>Storage accounts, redundancy, and endpoints</small></li><li>Azure Blob 儲存體與存取層 <small>Azure Blob Storage and access tiers</small></li><li>SAS、金鑰與儲存體安全性 <small>SAS, keys, and storage security</small></li><li>Azure Files 與檔案同步 <small>Azure Files and file sync</small></li></ul></details>
+              <a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-storage/" target="_blank" rel="noreferrer">Microsoft Learn 路徑 <b aria-hidden="true">↗</b></a>
+            </article>
+
+            <article class="path-card">
+              <div class="path-card-top"><span class="path-number">05</span><span class="path-status status-outline">學習骨架 / OUTLINE</span></div>
+              <p class="path-eyebrow">COMPUTE</p>
+              <h3>部署和管理 Azure 計算資源<span>Deploy and manage Azure compute</span></h3>
+              <p class="path-description">部署虛擬機器、容器與 App Service 工作負載。</p>
+              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>ARM 範本與 Bicep 部署 <small>ARM templates and Bicep deployments</small></li><li>虛擬機器、磁碟與可用性 <small>Virtual machines, disks, and availability</small></li><li>虛擬機器擴展集與調整規模 <small>Virtual Machine Scale Sets and scaling</small></li><li>Azure Container Instances 與容器 <small>Azure Container Instances and containers</small></li><li>App Service 方案與 Web Apps <small>App Service plans and web apps</small></li></ul></details>
+              <a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-compute-resources/" target="_blank" rel="noreferrer">Microsoft Learn 路徑 <b aria-hidden="true">↗</b></a>
+            </article>
+
+            <article class="path-card">
+              <div class="path-card-top"><span class="path-number">06</span><span class="path-status status-outline">學習骨架 / OUTLINE</span></div>
+              <p class="path-eyebrow">MONITOR · BACKUP</p>
+              <h3>監視和備份 Azure 資源<span>Monitor and back up Azure resources</span></h3>
+              <p class="path-description">使用 Azure Monitor 觀測資源，並建立備份與復原能力。</p>
+              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>Azure Monitor 指標、記錄與警示 <small>Azure Monitor metrics, logs, and alerts</small></li><li>監視虛擬機器與診斷資料 <small>Monitor virtual machines and diagnostic data</small></li><li>Recovery Services vault 與備份原則 <small>Recovery Services vaults and backup policies</small></li><li>Azure Backup 還原與復原規劃 <small>Azure Backup restore and recovery planning</small></li></ul></details>
+              <a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-monitor-backup-resources/" target="_blank" rel="noreferrer">Microsoft Learn 路徑 <b aria-hidden="true">↗</b></a>
+            </article>
+          </div>
+          <p class="curriculum-footnote">小主題作為初版導覽骨架，實際考試範圍請以最新 Microsoft Learn 考試指南為準。<span>Topic lists are an outline; refer to the current Microsoft Learn study guide for exam objectives.</span></p>
+        </div>
       </section>
 
       <section class="lesson-section" id="lesson" aria-labelledby="lesson-title">
         <div class="wrap">
           <div class="section-heading">
-            <div><p class="section-index">01 — THE CONCEPT</p><h2 id="lesson-title">一筆指派，三個要素<span>One assignment, three parts</span></h2></div>
+            <div><p class="section-index">PATH 02 · DEEP DIVE</p><h2 id="lesson-title">RBAC 與權限範圍<span>Role assignments and scope</span></h2></div>
             <p class="section-intro">RBAC 不只是選一個角色；你同時決定「誰」可以做「什麼」，以及權限套用「在哪裡」。</p>
           </div>
 
