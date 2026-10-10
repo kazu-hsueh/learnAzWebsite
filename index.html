@@ -21,7 +21,7 @@
       </a>
       <nav class="top-nav" aria-label="主要導覽">
         <a href="#curriculum">六大主題 <span>ROADMAP</span></a>
-        <a href="#lesson">RBAC 筆記 <span>STUDY</span></a>
+        <a href="#topic-content">學習內容 <span>STUDY</span></a>
       </nav>
       <a class="top-exam" href="https://learn.microsoft.com/zh-tw/credentials/certifications/exams/az-104/" target="_blank" rel="noreferrer">
         AZ-104 <span aria-hidden="true">↗</span>
@@ -60,73 +60,54 @@
             <p class="section-intro">先建立完整範圍，再逐章補上觀念、操作筆記與練習題。小主題依 Microsoft Learn 路徑整理，細節會分階段補齊。</p>
           </div>
 
-          <div class="curriculum-grid">
-            <article class="path-card path-foundation">
-              <div class="path-card-top"><span class="path-number">01</span><span class="path-status status-outline">學習骨架 / OUTLINE</span></div>
-              <p class="path-eyebrow">FOUNDATION · 先備能力</p>
-              <h3>Azure 系統管理員的先決條件<span>Administrator prerequisites</span></h3>
-              <p class="path-description">熟悉管理 Azure 環境前需要的基本工具與部署概念。</p>
-              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>Azure Cloud Shell 簡介 <small>Introduction to Azure Cloud Shell</small></li><li>使用 JSON ARM 範本部署 Azure 基礎結構 <small>Deploy Azure infrastructure with JSON ARM templates</small></li></ul></details>
-              <a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-administrator-prerequisites/" target="_blank" rel="noreferrer">Microsoft Learn 路徑 <b aria-hidden="true">↗</b></a>
-            </article>
-
-            <article class="path-card path-identity path-active">
-              <div class="path-card-top"><span class="path-number">02</span><span class="path-status status-active">已有教材 / IN PROGRESS</span></div>
-              <p class="path-eyebrow">IDENTITY · GOVERNANCE</p>
-              <h3>管理身分識別和治理<span>Manage identities and governance</span></h3>
-              <p class="path-description">管理 Microsoft Entra 身分、Azure RBAC 權限與資源治理。</p>
-              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>Microsoft Entra ID 與身分識別 <small>Microsoft Entra ID and identities</small></li><li>使用者、群組與自助式密碼重設 <small>Users, groups, and SSPR</small></li><li>Azure 角色型存取控制（RBAC） <small>Azure role-based access control</small></li><li>Azure Policy、標籤與資源鎖定 <small>Azure Policy, tags, and resource locks</small></li><li>訂用帳戶、管理群組與成本管理 <small>Subscriptions, management groups, and cost management</small></li></ul></details>
-              <div class="path-actions"><a class="path-link path-link-primary" href="#lesson">閱讀 RBAC 筆記 <b aria-hidden="true">↓</b></a><a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-identities-governance/" target="_blank" rel="noreferrer">Learn 路徑 <b aria-hidden="true">↗</b></a></div>
-            </article>
-
-            <article class="path-card">
-              <div class="path-card-top"><span class="path-number">03</span><span class="path-status status-outline">學習骨架 / OUTLINE</span></div>
-              <p class="path-eyebrow">NETWORKING</p>
-              <h3>設定及管理虛擬網路<span>Configure and manage virtual networks</span></h3>
-              <p class="path-description">規劃連線、網路安全、名稱解析與流量傳遞。</p>
-              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>虛擬網路、子網路與對等互連 <small>Virtual networks, subnets, and peering</small></li><li>網路安全性群組與安全規則 <small>Network security groups and rules</small></li><li>Azure DNS 與名稱解析 <small>Azure DNS and name resolution</small></li><li>路由、負載平衡與應用程式閘道 <small>Routing, load balancing, and Application Gateway</small></li><li>網路監看員與連線疑難排解 <small>Network Watcher and connectivity troubleshooting</small></li></ul></details>
-              <a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-virtual-networks/" target="_blank" rel="noreferrer">Microsoft Learn 路徑 <b aria-hidden="true">↗</b></a>
-            </article>
-
-            <article class="path-card">
-              <div class="path-card-top"><span class="path-number">04</span><span class="path-status status-outline">學習骨架 / OUTLINE</span></div>
-              <p class="path-eyebrow">STORAGE</p>
-              <h3>實作和管理儲存體<span>Implement and manage storage</span></h3>
-              <p class="path-description">建立儲存體帳戶，管理 Blob、Azure Files 與存取安全。</p>
-              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>儲存體帳戶、複寫與端點 <small>Storage accounts, redundancy, and endpoints</small></li><li>Azure Blob 儲存體與存取層 <small>Azure Blob Storage and access tiers</small></li><li>SAS、金鑰與儲存體安全性 <small>SAS, keys, and storage security</small></li><li>Azure Files 與檔案同步 <small>Azure Files and file sync</small></li></ul></details>
-              <a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-storage/" target="_blank" rel="noreferrer">Microsoft Learn 路徑 <b aria-hidden="true">↗</b></a>
-            </article>
-
-            <article class="path-card">
-              <div class="path-card-top"><span class="path-number">05</span><span class="path-status status-outline">學習骨架 / OUTLINE</span></div>
-              <p class="path-eyebrow">COMPUTE</p>
-              <h3>部署和管理 Azure 計算資源<span>Deploy and manage Azure compute</span></h3>
-              <p class="path-description">部署虛擬機器、容器與 App Service 工作負載。</p>
-              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>ARM 範本與 Bicep 部署 <small>ARM templates and Bicep deployments</small></li><li>虛擬機器、磁碟與可用性 <small>Virtual machines, disks, and availability</small></li><li>虛擬機器擴展集與調整規模 <small>Virtual Machine Scale Sets and scaling</small></li><li>Azure Container Instances 與容器 <small>Azure Container Instances and containers</small></li><li>App Service 方案與 Web Apps <small>App Service plans and web apps</small></li></ul></details>
-              <a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-compute-resources/" target="_blank" rel="noreferrer">Microsoft Learn 路徑 <b aria-hidden="true">↗</b></a>
-            </article>
-
-            <article class="path-card">
-              <div class="path-card-top"><span class="path-number">06</span><span class="path-status status-outline">學習骨架 / OUTLINE</span></div>
-              <p class="path-eyebrow">MONITOR · BACKUP</p>
-              <h3>監視和備份 Azure 資源<span>Monitor and back up Azure resources</span></h3>
-              <p class="path-description">使用 Azure Monitor 觀測資源，並建立備份與復原能力。</p>
-              <details class="path-topics"><summary>展開小主題 <span>VIEW TOPICS</span></summary><ul><li>Azure Monitor 指標、記錄與警示 <small>Azure Monitor metrics, logs, and alerts</small></li><li>監視虛擬機器與診斷資料 <small>Monitor virtual machines and diagnostic data</small></li><li>Recovery Services vault 與備份原則 <small>Recovery Services vaults and backup policies</small></li><li>Azure Backup 還原與復原規劃 <small>Azure Backup restore and recovery planning</small></li></ul></details>
-              <a class="path-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-monitor-backup-resources/" target="_blank" rel="noreferrer">Microsoft Learn 路徑 <b aria-hidden="true">↗</b></a>
-            </article>
+          <div class="topic-tabs" role="tablist" aria-label="AZ-104 六大學習主題">
+            <button class="topic-tab is-active" id="topic-tab-prerequisites" type="button" role="tab" aria-selected="true" aria-controls="panel-prerequisites" tabindex="0" data-topic-target="panel-prerequisites">
+              <span class="topic-tab-number">01</span><span class="topic-tab-copy"><strong>Azure 系統管理員的先決條件</strong><small>Administrator prerequisites</small><span>建立管理 Azure 所需的工具與部署基礎。</span></span><span class="topic-tab-state">FOUNDATION</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="topic-tab" id="topic-tab-identity" type="button" role="tab" aria-selected="false" aria-controls="panel-identity" tabindex="-1" data-topic-target="panel-identity">
+              <span class="topic-tab-number">02</span><span class="topic-tab-copy"><strong>管理身分識別和治理</strong><small>Manage identities and governance</small><span>管理 Microsoft Entra 身分、RBAC 權限與 Azure 治理。</span></span><span class="topic-tab-state">RBAC NOTES</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="topic-tab" id="topic-tab-networking" type="button" role="tab" aria-selected="false" aria-controls="panel-networking" tabindex="-1" data-topic-target="panel-networking">
+              <span class="topic-tab-number">03</span><span class="topic-tab-copy"><strong>設定及管理虛擬網路</strong><small>Configure and manage virtual networks</small><span>規劃 Azure 網路連線、安全性、名稱解析與流量傳遞。</span></span><span class="topic-tab-state">OUTLINE</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="topic-tab" id="topic-tab-storage" type="button" role="tab" aria-selected="false" aria-controls="panel-storage" tabindex="-1" data-topic-target="panel-storage">
+              <span class="topic-tab-number">04</span><span class="topic-tab-copy"><strong>實作和管理儲存體</strong><small>Implement and manage storage</small><span>管理儲存體帳戶、Blob、Azure Files 與資料存取。</span></span><span class="topic-tab-state">OUTLINE</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="topic-tab" id="topic-tab-compute" type="button" role="tab" aria-selected="false" aria-controls="panel-compute" tabindex="-1" data-topic-target="panel-compute">
+              <span class="topic-tab-number">05</span><span class="topic-tab-copy"><strong>部署和管理 Azure 計算資源</strong><small>Deploy and manage Azure compute resources</small><span>部署與維運虛擬機器、容器及 App Service。</span></span><span class="topic-tab-state">OUTLINE</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button class="topic-tab" id="topic-tab-monitor" type="button" role="tab" aria-selected="false" aria-controls="panel-monitor" tabindex="-1" data-topic-target="panel-monitor">
+              <span class="topic-tab-number">06</span><span class="topic-tab-copy"><strong>監視和備份 Azure 資源</strong><small>Monitor and back up Azure resources</small><span>使用 Azure Monitor 觀測資源，並建立備份與復原能力。</span></span><span class="topic-tab-state">OUTLINE</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
+            </button>
           </div>
-          <p class="curriculum-footnote">小主題作為初版導覽骨架，實際考試範圍請以最新 Microsoft Learn 考試指南為準。<span>Topic lists are an outline; refer to the current Microsoft Learn study guide for exam objectives.</span></p>
         </div>
       </section>
 
-      <section class="lesson-section" id="lesson" aria-labelledby="lesson-title">
-        <div class="wrap">
-          <div class="section-heading">
-            <div><p class="section-index">PATH 02 · DEEP DIVE</p><h2 id="lesson-title">RBAC 與權限範圍<span>Role assignments and scope</span></h2></div>
-            <p class="section-intro">RBAC 不只是選一個角色；你同時決定「誰」可以做「什麼」，以及權限套用「在哪裡」。</p>
+      <section class="topic-content" id="topic-content" aria-label="所選主題的學習內容">
+        <article class="topic-panel" id="panel-prerequisites" role="tabpanel" aria-labelledby="topic-tab-prerequisites">
+          <div class="wrap">
+            <header class="topic-panel-header"><div><p class="section-index">PATH 01 · FOUNDATION</p><h2>Azure 系統管理員的先決條件<span>Administrator prerequisites</span></h2></div><p>從日常管理工具到基礎架構部署，補齊進入 Azure 系統管理工作的必要起點。</p></header>
+            <div class="subtopic-list">
+              <article class="subtopic-row"><span class="subtopic-number">01.01</span><div><h3>Azure Cloud Shell 簡介<span>Introduction to Azure Cloud Shell</span></h3><p>認識瀏覽器中的命令列環境，了解如何使用 Azure CLI 或 PowerShell 管理 Azure。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">01.02</span><div><h3>使用 JSON ARM 範本部署 Azure 基礎結構<span>Deploy Azure infrastructure with JSON ARM templates</span></h3><p>了解以宣告式範本描述資源，並透過一致、可重複的方式部署 Azure 基礎結構。</p></div></article>
+            </div>
+            <a class="topic-source-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-administrator-prerequisites/" target="_blank" rel="noreferrer">Microsoft Learn 官方學習路徑 <b aria-hidden="true">↗</b></a>
           </div>
+        </article>
 
-          <div class="concept-grid">
+        <article class="topic-panel" id="panel-identity" role="tabpanel" aria-labelledby="topic-tab-identity" hidden>
+          <div class="wrap">
+            <header class="topic-panel-header"><div><p class="section-index">PATH 02 · IDENTITY &amp; GOVERNANCE</p><h2>管理身分識別和治理<span>Manage identities and governance</span></h2></div><p>從 Microsoft Entra 身分開始，延伸到資源存取、政策與訂用帳戶治理。</p></header>
+            <div class="subtopic-list">
+              <article class="subtopic-row"><span class="subtopic-number">02.01</span><div><h3>了解 Microsoft Entra ID<span>Understand Microsoft Entra ID</span></h3><p>認識 Azure 雲端身分識別服務，以及目錄、使用者和群組的基本概念。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">02.02</span><div><h3>建立、設定及管理身分識別<span>Create, configure, and manage identities</span></h3><p>整理使用者、群組、外部身分與自助式密碼重設的管理流程。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">02.03</span><div><h3>使用 Azure RBAC 保護 Azure 資源<span>Secure Azure resources with Azure RBAC</span></h3><p>掌握角色指派的主體、角色與範圍，並理解權限如何沿資源階層繼承。</p></div></article>
+            </div>
+
+            <section class="rbac-lesson" id="lesson" aria-labelledby="lesson-title">
+              <div class="subtopic-heading"><span class="subtopic-number">02.03 · STUDY NOTES</span><div><h3 id="lesson-title">RBAC 與權限範圍<span>Role assignments and scope</span></h3><p>RBAC 不只是選一個角色；你同時決定「誰」可以做「什麼」，以及權限套用「在哪裡」。</p></div></div>
+
+              <div class="concept-grid">
             <article class="concept-item">
               <span class="concept-number">01</span>
               <div><h3>安全性主體 <small>WHO</small></h3><p>被授權的身分，例如使用者、群組、服務主體或受控識別。</p><p class="english-copy">The identity receiving access: a user, group, service principal, or managed identity.</p></div>
@@ -144,7 +125,7 @@
             </article>
           </div>
 
-          <div class="scope-block">
+              <div class="scope-block">
             <div class="scope-copy"><p class="section-index">SCOPE HIERARCHY</p><h3>範圍越上層，<br>影響越廣。</h3><p>在上層範圍授予的權限會向下繼承。只想管理一個資源群組，就不必把角色指派在整個訂用帳戶。</p><p class="english-copy">Assignments flow down to child scopes. If access is needed for one resource group, there is no need to grant it at the subscription level.</p></div>
             <div class="scope-diagram" aria-label="Azure RBAC 權限範圍由管理群組到訂用帳戶、資源群組、資源逐層縮小">
               <div class="scope-level level-management"><span class="scope-glyph">▦</span><span><b>管理群組</b><small>Management group</small></span><span class="level-tag">ROOT</span></div>
@@ -157,33 +138,91 @@
             </div>
           </div>
 
-          <aside class="exam-note">
+              <aside class="exam-note">
             <span class="note-mark">!</span>
             <p><b>考點辨析</b>　Azure RBAC 管理「誰能對 Azure 資源做什麼」；Azure Policy 管理資源應符合的規則與設定。兩者目的不同。</p>
             <p class="english-copy"><b>Exam distinction</b>　Azure RBAC controls who can do what to Azure resources. Azure Policy enforces rules and configuration requirements. They solve different problems.</p>
           </aside>
-        </div>
-      </section>
-
-      <section class="practice-section" id="practice" aria-labelledby="practice-title">
-        <div class="wrap practice-wrap">
-          <div class="practice-intro">
-            <p class="section-index">02 — QUICK CHECK</p>
-            <h2 id="practice-title">換你判斷<span>Put it to the test</span></h2>
-            <p>三題情境練習，確認你掌握角色與範圍。作答後會立即看到解析。</p>
-            <p class="english-copy">Three scenario questions to check your understanding of roles and scope. Review the explanation after each answer.</p>
-            <div class="practice-disclaimer">原創練習題，非 Microsoft 官方考題<br>Original practice questions, not official Microsoft exam questions</div>
+              <div class="practice-section" id="practice" aria-labelledby="practice-title">
+                <div class="practice-wrap">
+                  <div class="practice-intro">
+                    <p class="section-index">02.03 · QUICK CHECK</p>
+                    <h2 id="practice-title">換你判斷<span>Put it to the test</span></h2>
+                    <p>三題情境練習，確認你掌握角色與範圍。作答後會立即看到解析。</p>
+                    <p class="english-copy">Three scenario questions to check your understanding of roles and scope. Review the explanation after each answer.</p>
+                    <div class="practice-disclaimer">原創練習題，非 Microsoft 官方考題<br>Original practice questions, not official Microsoft exam questions</div>
+                  </div>
+                  <div class="quiz-panel" aria-live="polite">
+                    <div class="quiz-topline"><span id="question-count">QUESTION 01 / 03</span><span class="quiz-score">得分 <b id="score">0</b><i>/</i>3</span></div>
+                    <div class="quiz-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+                    <div id="question-area"></div>
+                    <div id="feedback" class="feedback" hidden></div>
+                    <div class="quiz-actions"><button class="check-button" id="check-answer" type="button">確認答案 <span>CHECK ANSWER</span><b aria-hidden="true">↗</b></button><button class="next-button" id="next-question" type="button" hidden>下一題 <span>NEXT QUESTION</span><b aria-hidden="true">→</b></button></div>
+                    <p class="quiz-hint" id="quiz-hint">選擇一個答案後確認 / Select an answer to continue</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="subtopic-list subtopic-list-after">
+              <article class="subtopic-row"><span class="subtopic-number">02.04</span><div><h3>使用 Azure Policy 與資源鎖定實作治理<span>Implement governance with Azure Policy and resource locks</span></h3><p>整理政策指派、合規性評估、標籤及資源鎖定如何協助維持環境一致性。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">02.05</span><div><h3>管理訂用帳戶、管理群組與成本<span>Manage subscriptions, management groups, and costs</span></h3><p>建立 Azure 管理階層，並使用預算、成本警示與 Advisor 建議進行成本治理。</p></div></article>
+            </div>
+            <a class="topic-source-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-identities-governance/" target="_blank" rel="noreferrer">Microsoft Learn 官方學習路徑 <b aria-hidden="true">↗</b></a>
           </div>
+        </article>
 
-          <div class="quiz-panel" aria-live="polite">
-            <div class="quiz-topline"><span id="question-count">QUESTION 01 / 03</span><span class="quiz-score">得分 <b id="score">0</b><i>/</i>3</span></div>
-            <div class="quiz-progress" aria-hidden="true"><span id="progress-bar"></span></div>
-            <div id="question-area"></div>
-            <div id="feedback" class="feedback" hidden></div>
-            <div class="quiz-actions"><button class="check-button" id="check-answer" type="button">確認答案 <span>CHECK ANSWER</span><b aria-hidden="true">↗</b></button><button class="next-button" id="next-question" type="button" hidden>下一題 <span>NEXT QUESTION</span><b aria-hidden="true">→</b></button></div>
-            <p class="quiz-hint" id="quiz-hint">選擇一個答案後確認 / Select an answer to continue</p>
+        <article class="topic-panel" id="panel-networking" role="tabpanel" aria-labelledby="topic-tab-networking" hidden>
+          <div class="wrap">
+            <header class="topic-panel-header"><div><p class="section-index">PATH 03 · NETWORKING</p><h2>設定及管理虛擬網路<span>Configure and manage virtual networks</span></h2></div><p>建立安全可靠的 Azure 網路，理解連線、流量控制與應用程式傳遞。</p></header>
+            <div class="subtopic-list">
+              <article class="subtopic-row"><span class="subtopic-number">03.01</span><div><h3>設定虛擬網路與子網路<span>Configure virtual networks and subnets</span></h3><p>規劃位址空間、公用 IP 與子網路，建立雲端資源的網路基礎。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">03.02</span><div><h3>設定網路安全性群組<span>Configure network security groups</span></h3><p>使用安全性規則篩選進出子網路或網路介面的流量。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">03.03</span><div><h3>設定 Azure DNS 與虛擬網路對等互連<span>Configure Azure DNS and virtual network peering</span></h3><p>連接不同虛擬網路，並設定可供應用程式使用的名稱解析。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">03.04</span><div><h3>使用路由控制網路流量<span>Control network traffic with routes</span></h3><p>理解路由選擇，並透過使用者定義路由控制流量傳遞路徑。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">03.05</span><div><h3>負載平衡與網路監視<span>Load balancing and network monitoring</span></h3><p>認識 Load Balancer、Application Gateway 與 Network Watcher 的用途。</p></div></article>
+            </div>
+            <a class="topic-source-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-virtual-networks/" target="_blank" rel="noreferrer">Microsoft Learn 官方學習路徑 <b aria-hidden="true">↗</b></a>
           </div>
-        </div>
+        </article>
+
+        <article class="topic-panel" id="panel-storage" role="tabpanel" aria-labelledby="topic-tab-storage" hidden>
+          <div class="wrap">
+            <header class="topic-panel-header"><div><p class="section-index">PATH 04 · STORAGE</p><h2>實作和管理儲存體<span>Implement and manage storage</span></h2></div><p>依資料類型與存取需求選擇儲存服務，並設定可用性與安全控制。</p></header>
+            <div class="subtopic-list">
+              <article class="subtopic-row"><span class="subtopic-number">04.01</span><div><h3>設定儲存體帳戶<span>Configure storage accounts</span></h3><p>比較複寫選項、端點與帳戶設定，建立符合工作負載需求的儲存體。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">04.02</span><div><h3>設定 Azure Blob 儲存體<span>Configure Azure Blob Storage</span></h3><p>管理容器與 Blob，了解存取層、生命週期管理和物件複寫。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">04.03</span><div><h3>設定 Azure 儲存體安全性<span>Configure Azure Storage security</span></h3><p>比較共用存取簽章、存取金鑰與身分識別型存取控制方式。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">04.04</span><div><h3>設定 Azure Files 與檔案同步<span>Configure Azure Files and file sync</span></h3><p>建立檔案共用，並認識雲端與內部部署檔案伺服器的同步方式。</p></div></article>
+            </div>
+            <a class="topic-source-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-storage/" target="_blank" rel="noreferrer">Microsoft Learn 官方學習路徑 <b aria-hidden="true">↗</b></a>
+          </div>
+        </article>
+
+        <article class="topic-panel" id="panel-compute" role="tabpanel" aria-labelledby="topic-tab-compute" hidden>
+          <div class="wrap">
+            <header class="topic-panel-header"><div><p class="section-index">PATH 05 · COMPUTE</p><h2>部署和管理 Azure 計算資源<span>Deploy and manage Azure compute resources</span></h2></div><p>依工作負載選擇計算服務，掌握部署、可用性與調整規模。</p></header>
+            <div class="subtopic-list">
+              <article class="subtopic-row"><span class="subtopic-number">05.01</span><div><h3>使用 ARM 範本與 Bicep 自動部署<span>Automate deployments with ARM templates and Bicep</span></h3><p>閱讀、修改與部署宣告式範本，讓基礎結構配置可重複管理。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">05.02</span><div><h3>建立及設定虛擬機器<span>Create and configure virtual machines</span></h3><p>選擇 VM 大小與磁碟，並設定可用性、擴展集和移轉作業。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">05.03</span><div><h3>部署及管理容器<span>Deploy and manage containers</span></h3><p>使用 Azure Container Instances 執行容器，了解容器群組與資源配置。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">05.04</span><div><h3>設定 Azure App Service<span>Configure Azure App Service</span></h3><p>建立 App Service 方案與 Web App，了解部署位置、TLS 及擴縮設定。</p></div></article>
+            </div>
+            <a class="topic-source-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-compute-resources/" target="_blank" rel="noreferrer">Microsoft Learn 官方學習路徑 <b aria-hidden="true">↗</b></a>
+          </div>
+        </article>
+
+        <article class="topic-panel" id="panel-monitor" role="tabpanel" aria-labelledby="topic-tab-monitor" hidden>
+          <div class="wrap">
+            <header class="topic-panel-header"><div><p class="section-index">PATH 06 · MONITOR &amp; BACKUP</p><h2>監視和備份 Azure 資源<span>Monitor and back up Azure resources</span></h2></div><p>建立可觀測性與資料保護流程，協助及早發現問題並復原工作負載。</p></header>
+            <div class="subtopic-list">
+              <article class="subtopic-row"><span class="subtopic-number">06.01</span><div><h3>使用 Azure Monitor 監視資源<span>Monitor resources with Azure Monitor</span></h3><p>理解平台指標與記錄，建立警示並監視虛擬機器效能。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">06.02</span><div><h3>收集與分析診斷資料<span>Collect and analyze diagnostic data</span></h3><p>設定診斷資料目的地，透過記錄與指標判讀資源狀態。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">06.03</span><div><h3>使用 Azure Backup 保護工作負載<span>Protect workloads with Azure Backup</span></h3><p>建立保存庫與備份原則，執行備份及還原作業。</p></div></article>
+              <article class="subtopic-row"><span class="subtopic-number">06.04</span><div><h3>規劃復原與 Azure Site Recovery<span>Plan recovery with Azure Site Recovery</span></h3><p>認識復原目標與容錯移轉概念，規劃服務中斷時的復原方式。</p></div></article>
+            </div>
+            <a class="topic-source-link" href="https://learn.microsoft.com/zh-tw/training/paths/az-104-monitor-backup-resources/" target="_blank" rel="noreferrer">Microsoft Learn 官方學習路徑 <b aria-hidden="true">↗</b></a>
+          </div>
+        </article>
       </section>
 
       <section class="sources-section" aria-labelledby="sources-title">
