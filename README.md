@@ -1,6 +1,6 @@
 # AZ-104 Fieldnotes
 
-以繁體中文為主、中英並列的 AZ-104 靜態學習網站。首頁整理六條 Microsoft Learn 學習路徑與各自的小主題骨架；身分識別與治理中的 Azure RBAC 與權限範圍，提供第一份完整筆記和互動練習。
+以繁體中文為主、中英並列的 AZ-104 靜態學習網站。首頁整理六條 Microsoft Learn 學習路徑與各自的小主題；目前已補充 Azure Cloud Shell、Microsoft Entra ID 與 Azure RBAC 的學習筆記，RBAC 另有互動練習。
 
 ## 六大學習路徑
 
