@@ -1,0 +1,15 @@
+{
+  "number": "04",
+  "slug": "storage",
+  "title": "實作和管理儲存體",
+  "titleEn": "Implement and manage storage",
+  "summary": "依資料類型與存取需求選擇儲存服務，並設定可用性與安全控制。",
+  "sourceUrl": "https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-storage/",
+  "sourceLabel": "Microsoft Learn 官方學習路徑",
+  "subtopics": [
+    { "number": "04.01", "title": "設定儲存體帳戶", "titleEn": "Configure storage accounts", "description": "比較複寫選項、端點與帳戶設定，建立符合工作負載需求的儲存體。"},
+    { "number": "04.02", "title": "設定 Azure Blob 儲存體", "titleEn": "Configure Azure Blob Storage", "description": "管理容器與 Blob，了解存取層、生命週期管理和物件複寫。"},
+    { "number": "04.03", "title": "設定 Azure 儲存體安全性", "titleEn": "Configure Azure Storage security", "description": "比較共用存取簽章、存取金鑰與身分識別型存取控制方式。"},
+    { "number": "04.04", "title": "設定 Azure Files 與檔案同步", "titleEn": "Configure Azure Files and file sync", "description": "建立檔案共用，並認識雲端與內部部署檔案伺服器的同步方式。"}
+  ]
+}

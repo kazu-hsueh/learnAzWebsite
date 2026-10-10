@@ -1,0 +1,13 @@
+{
+  "number": "01",
+  "slug": "prerequisites",
+  "title": "Azure 系統管理員的先決條件",
+  "titleEn": "Administrator prerequisites",
+  "summary": "從日常管理工具到基礎架構部署，補齊進入 Azure 系統管理工作的必要起點。",
+  "sourceUrl": "https://learn.microsoft.com/zh-tw/training/paths/az-104-administrator-prerequisites/",
+  "sourceLabel": "Microsoft Learn 官方學習路徑",
+  "subtopics": [
+    { "number": "01.01", "title": "Azure Cloud Shell 簡介", "titleEn": "Introduction to Azure Cloud Shell", "description": "認識瀏覽器中的命令列環境，了解如何使用 Azure CLI 或 PowerShell 管理 Azure。", "notes": ["可選擇 Bash 或 PowerShell，兩者指令和腳本語法不同。", "Cloud Shell 主機依工作階段建立；掛載的 Azure Files 可保存 $HOME 中的檔案。", "執行管理命令前，先確認目前租用戶與訂用帳戶。"] },
+    { "number": "01.02", "title": "使用 JSON ARM 範本部署 Azure 基礎結構", "titleEn": "Deploy Azure infrastructure with JSON ARM templates", "description": "了解以宣告式範本描述資源，並透過一致、可重複的方式部署 Azure 基礎結構。"}
+  ]
+}

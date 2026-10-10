@@ -1,0 +1,15 @@
+{
+  "number": "05",
+  "slug": "compute",
+  "title": "部署和管理 Azure 計算資源",
+  "titleEn": "Deploy and manage Azure compute resources",
+  "summary": "依工作負載選擇計算服務，掌握部署、可用性與調整規模。",
+  "sourceUrl": "https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-compute-resources/",
+  "sourceLabel": "Microsoft Learn 官方學習路徑",
+  "subtopics": [
+    { "number": "05.01", "title": "使用 ARM 範本與 Bicep 自動部署", "titleEn": "Automate deployments with ARM templates and Bicep", "description": "閱讀、修改與部署宣告式範本，讓基礎結構配置可重複管理。"},
+    { "number": "05.02", "title": "建立及設定虛擬機器", "titleEn": "Create and configure virtual machines", "description": "選擇 VM 大小與磁碟，並設定可用性、擴展集和移轉作業。"},
+    { "number": "05.03", "title": "部署及管理容器", "titleEn": "Deploy and manage containers", "description": "使用 Azure Container Instances 執行容器，了解容器群組與資源配置。"},
+    { "number": "05.04", "title": "設定 Azure App Service", "titleEn": "Configure Azure App Service", "description": "建立 App Service 方案與 Web App，了解部署位置、TLS 及擴縮設定。"}
+  ]
+}

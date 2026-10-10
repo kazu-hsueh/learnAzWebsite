@@ -1,0 +1,15 @@
+{
+  "number": "06",
+  "slug": "monitor-backup",
+  "title": "監視和備份 Azure 資源",
+  "titleEn": "Monitor and back up Azure resources",
+  "summary": "建立可觀測性與資料保護流程，協助及早發現問題並復原工作負載。",
+  "sourceUrl": "https://learn.microsoft.com/zh-tw/training/paths/az-104-monitor-backup-resources/",
+  "sourceLabel": "Microsoft Learn 官方學習路徑",
+  "subtopics": [
+    { "number": "06.01", "title": "使用 Azure Monitor 監視資源", "titleEn": "Monitor resources with Azure Monitor", "description": "理解平台指標與記錄，建立警示並監視虛擬機器效能。"},
+    { "number": "06.02", "title": "收集與分析診斷資料", "titleEn": "Collect and analyze diagnostic data", "description": "設定診斷資料目的地，透過記錄與指標判讀資源狀態。"},
+    { "number": "06.03", "title": "使用 Azure Backup 保護工作負載", "titleEn": "Protect workloads with Azure Backup", "description": "建立保存庫與備份原則，執行備份及還原作業。"},
+    { "number": "06.04", "title": "規劃復原與 Azure Site Recovery", "titleEn": "Plan recovery with Azure Site Recovery", "description": "認識復原目標與容錯移轉概念，規劃服務中斷時的復原方式。"}
+  ]
+}

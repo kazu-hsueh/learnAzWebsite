@@ -1,6 +1,6 @@
 # AZ-104 Fieldnotes
 
-以繁體中文為主、中英並列的 AZ-104 靜態學習網站。首頁整理六條 Microsoft Learn 學習路徑與各自的小主題；目前已補充 Azure Cloud Shell、Microsoft Entra ID 與 Azure RBAC 的學習筆記，RBAC 另有互動練習。
+以繁體中文為主、中英並列的 AZ-104 靜態學習網站。首頁提供六條學習路徑；每條路徑的內容由自己的資料夾管理，適合直接部署到 GitHub Pages。
 
 ## 六大學習路徑
 
@@ -11,15 +11,21 @@
 5. 部署和管理 Azure 計算資源
 6. 監視和備份 Azure 資源
 
-首頁的小主題是學習導覽骨架，不代表完整或官方考試範圍；實際考試目標請以最新 Microsoft Learn AZ-104 study guide 為準。各路徑卡片提供對應官方 Learn 連結。
+主題入口位於 `topics/<主題>/`，該資料夾的 `content.json` 維護主題介紹、小主題與筆記；`index.html` 載入共用的 `topic.js` 和 `topic.css`。新增主題時，新增資料夾並沿用同一頁面骨架，再將入口加到首頁。小主題清單不代表完整或官方考試範圍；實際考試目標請以最新 Microsoft Learn AZ-104 study guide 為準。
 
 ## 本機預覽
 
-直接以瀏覽器開啟 `index.html` 即可，無需安裝依賴或啟動後端。
+使用任一靜態檔案伺服器預覽，避免以 `file://` 開啟時瀏覽器封鎖 JSON 載入：
+
+```sh
+python3 -m http.server 8000
+```
+
+接著瀏覽 `http://localhost:8000`。網站無需安裝依賴或啟動後端。
 
 ## GitHub Pages
 
-在 repository 的 Settings > Pages 選擇部署來源分支與根目錄。網站使用相對路徑，可由 repository 根目錄發布。
+在 repository 的 Settings > Pages 選擇部署來源分支與根目錄。首頁連到 `topics/` 下的各主題資料夾，網站使用相對路徑，可由 repository 根目錄發布。
 
 ## 官方參考
 

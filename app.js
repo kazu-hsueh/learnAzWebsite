@@ -138,39 +138,4 @@ nextButton.addEventListener('click', () => {
   renderQuestion();
 });
 
-const topicTabs = [...document.querySelectorAll('.topic-tab')];
-const topicPanels = [...document.querySelectorAll('.topic-panel')];
-
-function activateTopic(tab, moveFocus = false) {
-  const activePanel = document.getElementById(tab.dataset.topicTarget);
-
-  topicTabs.forEach((topicTab) => {
-    const isActive = topicTab === tab;
-    topicTab.classList.toggle('is-active', isActive);
-    topicTab.setAttribute('aria-selected', String(isActive));
-    topicTab.tabIndex = isActive ? 0 : -1;
-  });
-
-  topicPanels.forEach((panel) => {
-    panel.hidden = panel !== activePanel;
-  });
-
-  if (moveFocus) tab.focus();
-}
-
-topicTabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => activateTopic(tab));
-  tab.addEventListener('keydown', (event) => {
-    let nextIndex = index;
-    if (event.key === 'ArrowDown' || event.key === 'ArrowRight') nextIndex = (index + 1) % topicTabs.length;
-    else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') nextIndex = (index - 1 + topicTabs.length) % topicTabs.length;
-    else if (event.key === 'Home') nextIndex = 0;
-    else if (event.key === 'End') nextIndex = topicTabs.length - 1;
-    else return;
-
-    event.preventDefault();
-    activateTopic(topicTabs[nextIndex], true);
-  });
-});
-
 renderQuestion();

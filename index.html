@@ -21,7 +21,6 @@
       </a>
       <nav class="top-nav" aria-label="主要導覽">
         <a href="#curriculum">六大主題 <span>ROADMAP</span></a>
-        <a href="#topic-content">學習內容 <span>STUDY</span></a>
       </nav>
       <a class="top-exam" href="https://learn.microsoft.com/zh-tw/credentials/certifications/exams/az-104/" target="_blank" rel="noreferrer">
         AZ-104 <span aria-hidden="true">↗</span>
@@ -57,33 +56,33 @@
         <div class="wrap">
           <div class="section-heading curriculum-heading">
             <div><p class="section-index">THE AZ-104 ROADMAP</p><h2 id="curriculum-title">六大主題，完整展開<span>Six paths. One learning map.</span></h2></div>
-            <p class="section-intro">先建立完整範圍，再逐章補上觀念、操作筆記與練習題。小主題依 Microsoft Learn 路徑整理，細節會分階段補齊。</p>
+            <p class="section-intro">選擇一條學習路徑，進入獨立維護的主題頁面與小主題清單。</p>
           </div>
 
-          <div class="topic-tabs" role="tablist" aria-label="AZ-104 六大學習主題">
-            <button class="topic-tab is-active" id="topic-tab-prerequisites" type="button" role="tab" aria-selected="true" aria-controls="panel-prerequisites" tabindex="0" data-topic-target="panel-prerequisites">
+          <nav class="topic-tabs" aria-label="AZ-104 六大學習主題">
+            <a class="topic-tab is-active" href="topics/prerequisites/">
               <span class="topic-tab-number">01</span><span class="topic-tab-copy"><strong>Azure 系統管理員的先決條件</strong><small>Administrator prerequisites</small><span>建立管理 Azure 所需的工具與部署基礎。</span></span><span class="topic-tab-state">FOUNDATION</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
-            </button>
-            <button class="topic-tab" id="topic-tab-identity" type="button" role="tab" aria-selected="false" aria-controls="panel-identity" tabindex="-1" data-topic-target="panel-identity">
+            </a>
+            <a class="topic-tab" href="topics/identity-governance/">
               <span class="topic-tab-number">02</span><span class="topic-tab-copy"><strong>管理身分識別和治理</strong><small>Manage identities and governance</small><span>管理 Microsoft Entra 身分、RBAC 權限與 Azure 治理。</span></span><span class="topic-tab-state">RBAC NOTES</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
-            </button>
-            <button class="topic-tab" id="topic-tab-networking" type="button" role="tab" aria-selected="false" aria-controls="panel-networking" tabindex="-1" data-topic-target="panel-networking">
+            </a>
+            <a class="topic-tab" href="topics/networking/">
               <span class="topic-tab-number">03</span><span class="topic-tab-copy"><strong>設定及管理虛擬網路</strong><small>Configure and manage virtual networks</small><span>規劃 Azure 網路連線、安全性、名稱解析與流量傳遞。</span></span><span class="topic-tab-state">OUTLINE</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
-            </button>
-            <button class="topic-tab" id="topic-tab-storage" type="button" role="tab" aria-selected="false" aria-controls="panel-storage" tabindex="-1" data-topic-target="panel-storage">
+            </a>
+            <a class="topic-tab" href="topics/storage/">
               <span class="topic-tab-number">04</span><span class="topic-tab-copy"><strong>實作和管理儲存體</strong><small>Implement and manage storage</small><span>管理儲存體帳戶、Blob、Azure Files 與資料存取。</span></span><span class="topic-tab-state">OUTLINE</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
-            </button>
-            <button class="topic-tab" id="topic-tab-compute" type="button" role="tab" aria-selected="false" aria-controls="panel-compute" tabindex="-1" data-topic-target="panel-compute">
+            </a>
+            <a class="topic-tab" href="topics/compute/">
               <span class="topic-tab-number">05</span><span class="topic-tab-copy"><strong>部署和管理 Azure 計算資源</strong><small>Deploy and manage Azure compute resources</small><span>部署與維運虛擬機器、容器及 App Service。</span></span><span class="topic-tab-state">OUTLINE</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
-            </button>
-            <button class="topic-tab" id="topic-tab-monitor" type="button" role="tab" aria-selected="false" aria-controls="panel-monitor" tabindex="-1" data-topic-target="panel-monitor">
+            </a>
+            <a class="topic-tab" href="topics/monitor-backup/">
               <span class="topic-tab-number">06</span><span class="topic-tab-copy"><strong>監視和備份 Azure 資源</strong><small>Monitor and back up Azure resources</small><span>使用 Azure Monitor 觀測資源，並建立備份與復原能力。</span></span><span class="topic-tab-state">OUTLINE</span><span class="topic-tab-arrow" aria-hidden="true">↗</span>
-            </button>
-          </div>
+            </a>
+          </nav>
         </div>
       </section>
 
-      <section class="topic-content" id="topic-content" aria-label="所選主題的學習內容">
+      <section class="topic-content" id="topic-content" aria-label="舊版主題內容" hidden>
         <article class="topic-panel" id="panel-prerequisites" role="tabpanel" aria-labelledby="topic-tab-prerequisites">
           <div class="wrap">
             <header class="topic-panel-header"><div><p class="section-index">PATH 01 · FOUNDATION</p><h2>Azure 系統管理員的先決條件<span>Administrator prerequisites</span></h2></div><p>從日常管理工具到基礎架構部署，補齊進入 Azure 系統管理工作的必要起點。</p></header>

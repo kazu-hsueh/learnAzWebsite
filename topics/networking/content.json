@@ -1,0 +1,16 @@
+{
+  "number": "03",
+  "slug": "networking",
+  "title": "設定及管理虛擬網路",
+  "titleEn": "Configure and manage virtual networks",
+  "summary": "建立安全可靠的 Azure 網路，理解連線、流量控制與應用程式傳遞。",
+  "sourceUrl": "https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-virtual-networks/",
+  "sourceLabel": "Microsoft Learn 官方學習路徑",
+  "subtopics": [
+    { "number": "03.01", "title": "設定虛擬網路與子網路", "titleEn": "Configure virtual networks and subnets", "description": "規劃位址空間、公用 IP 與子網路，建立雲端資源的網路基礎。"},
+    { "number": "03.02", "title": "設定網路安全性群組", "titleEn": "Configure network security groups", "description": "使用安全性規則篩選進出子網路或網路介面的流量。"},
+    { "number": "03.03", "title": "設定 Azure DNS 與虛擬網路對等互連", "titleEn": "Configure Azure DNS and virtual network peering", "description": "連接不同虛擬網路，並設定可供應用程式使用的名稱解析。"},
+    { "number": "03.04", "title": "使用路由控制網路流量", "titleEn": "Control network traffic with routes", "description": "理解路由選擇，並透過使用者定義路由控制流量傳遞路徑。"},
+    { "number": "03.05", "title": "負載平衡與網路監視", "titleEn": "Load balancing and network monitoring", "description": "認識 Load Balancer、Application Gateway 與 Network Watcher 的用途。"}
+  ]
+}

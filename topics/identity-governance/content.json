@@ -1,0 +1,42 @@
+{
+  "number": "02",
+  "slug": "identity-governance",
+  "title": "管理身分識別和治理",
+  "titleEn": "Manage identities and governance",
+  "summary": "從 Microsoft Entra 身分開始，延伸到資源存取、政策與訂用帳戶治理。",
+  "sourceUrl": "https://learn.microsoft.com/zh-tw/training/paths/az-104-manage-identities-governance/",
+  "sourceLabel": "Microsoft Learn 官方學習路徑",
+  "subtopics": [
+    { "number": "02.01", "title": "了解 Microsoft Entra ID", "titleEn": "Understand Microsoft Entra ID", "description": "認識雲端身分識別服務，以及目錄、使用者和群組的基本概念。", "notes": ["驗證回答「你是誰」；授權回答「你能做什麼」。登入成功不代表取得 Azure 資源權限。", "Entra ID 是雲端身分目錄；AD DS 提供傳統網域服務；Entra Domain Services 為雲端工作負載提供相容的網域功能。", "群組成員資格與 Azure 資源角色指派是不同設定。"] },
+    { "number": "02.02", "title": "建立、設定及管理身分識別", "titleEn": "Create, configure, and manage identities", "description": "整理使用者、群組、外部身分與自助式密碼重設的管理流程。"},
+    { "number": "02.03", "title": "使用 Azure RBAC 保護 Azure 資源", "titleEn": "Secure Azure resources with Azure RBAC", "description": "掌握角色指派的主體、角色與範圍，並理解權限如何沿資源階層繼承。", "notes": ["角色指派由安全性主體、角色定義與範圍組成。", "範圍階層為管理群組、訂用帳戶、資源群組、資源；子範圍會繼承上層指派。", "Contributor 可管理資源但不能指派 Azure RBAC 角色；Owner 可管理存取權。", "Azure RBAC 控制誰能對資源做什麼；Azure Policy 管理資源應符合的規則。"] },
+    { "number": "02.04", "title": "使用 Azure Policy 與資源鎖定實作治理", "titleEn": "Implement governance with Azure Policy and resource locks", "description": "整理政策指派、合規性評估、標籤及資源鎖定如何協助維持環境一致性。"},
+    { "number": "02.05", "title": "管理訂用帳戶、管理群組與成本", "titleEn": "Manage subscriptions, management groups, and costs", "description": "建立 Azure 管理階層，並使用預算、成本警示與 Advisor 建議進行成本治理。"}
+  ],
+  "practice": [
+    {
+      "prompt": "新進工程師需要檢視「開發」資源群組內所有資源，但不應變更設定。你應如何授權？",
+      "promptEn": "A new engineer needs to view all resources in the Development resource group but must not change them. How should you grant access?",
+      "answers": [{ "zh": "在資源群組範圍指派 Reader", "en": "Assign Reader at the resource group scope" }, { "zh": "在訂用帳戶範圍指派 Contributor", "en": "Assign Contributor at the subscription scope" }, { "zh": "在每個資源上指派 Owner", "en": "Assign Owner on each resource" }],
+      "correct": 0,
+      "explanation": "Reader 提供檢視權限；在資源群組範圍指派可涵蓋該群組內資源，且不授予變更能力。",
+      "explanationEn": "Reader provides viewing access. Assigning it at the resource group scope covers its resources without granting change permissions."
+    },
+    {
+      "prompt": "某人只需要管理一台虛擬機器。符合最小權限原則的做法是哪一項？",
+      "promptEn": "Someone only needs to manage one virtual machine. Which option follows least privilege?",
+      "answers": [{ "zh": "在管理群組範圍指派 Contributor", "en": "Assign Contributor at the management group scope" }, { "zh": "在該虛擬機器範圍指派 Contributor", "en": "Assign Contributor at that virtual machine scope" }, { "zh": "在訂用帳戶範圍指派 Owner", "en": "Assign Owner at the subscription scope" }],
+      "correct": 1,
+      "explanation": "將 Contributor 指派在目標虛擬機器範圍，可把權限限制在必要的資源與操作內。",
+      "explanationEn": "Assigning Contributor at the target VM scope limits access to the required resource and actions."
+    },
+    {
+      "prompt": "開發者必須建立及管理資源，但不能授予其他人 Azure RBAC 權限。哪個內建角色符合需求？",
+      "promptEn": "A developer must create and manage resources but must not grant Azure RBAC access to others. Which built-in role fits?",
+      "answers": [{ "zh": "Reader", "en": "Reader" }, { "zh": "Contributor", "en": "Contributor" }, { "zh": "Owner", "en": "Owner" }],
+      "correct": 1,
+      "explanation": "Contributor 可管理資源，但不能指派 Azure RBAC 角色；Owner 則包含管理存取權的能力。",
+      "explanationEn": "Contributor can manage resources but cannot assign Azure RBAC roles. Owner can also manage access."
+    }
+  ]
+}
